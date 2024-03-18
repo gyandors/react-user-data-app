@@ -1,0 +1,36 @@
+.form-control {
+  padding: 15px;
+  margin: 20px 0;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.user-name-control,
+.user-id-control {
+  margin-bottom: 20px;
+}
+
+.user-name-control label,
+.user-id-control label {
+  display: block;
+  width: fit-content;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.user-name-control input,
+.user-id-control input {
+  width: 70%;
+  height: 21px;
+  padding: 2px;
+  font-size: medium;
+}
+
+.form-control button {
+  cursor: pointer;
+  padding: 7px;
+  font-weight: bold;
+  color: white;
+  background-color: #910873;
+  border: 1px solid;
+}
