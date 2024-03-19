@@ -1,9 +1,21 @@
 * {
   padding: 0px;
   margin: 0px;
+  box-sizing: border-box;
 }
 
-body {
-  background-color: #353030;
+html {
   font-family: 'Segoe UI';
+  background-color: #353030;
+}
+
+#root {
+  width: 50vw;
+  margin: 1rem auto;
+  max-width: 380px;
+}
+@media (max-width: 650px) {
+  #root {
+    width: 90vw;
+  }
 }

@@ -1,26 +1,20 @@
 import React, { useState } from 'react';
-import UserForm from './Components/UserForm';
-import UserList from './Components/UserList';
-import './App.css';
+import UserForm from './Components/Users/UserForm';
+import UserList from './Components/Users/UserList';
 
 function App() {
-  const [users, setUers] = useState([]);
+  const [users, setUsers] = useState([]);
 
   function handleAddNewUser(newUser) {
-    setUers((prevUsers) => {
+    setUsers((prevUsers) => {
       return [newUser, ...prevUsers];
     });
   }
   return (
-    <div className="App">
+    <>
       <UserForm onAddNewUser={handleAddNewUser} />
-      <div className="user-list">
-        {users.length === 0 && (
-          <h4 style={{ textAlign: 'center' }}>No users found.</h4>
-        )}
-        <UserList users={users} />
-      </div>
-    </div>
+      <UserList users={users} />
+    </>
   );
 }
 

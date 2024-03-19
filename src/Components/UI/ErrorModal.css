@@ -1,0 +1,53 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.error-modal {
+  position: fixed;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 25rem;
+  z-index: 100;
+  overflow: hidden;
+}
+@media (max-width: 650px) {
+  .error-modal {
+    width: 15rem;
+  }
+}
+
+.error-header {
+  background-color: #910873;
+  padding: 1rem;
+}
+
+.error-header h3 {
+  color: white;
+}
+
+.error-section {
+  padding: 1rem;
+}
+
+.error-footer button {
+  float: right;
+  cursor: pointer;
+  padding: 7px;
+  margin: 5px;
+  font-weight: bold;
+  color: white;
+  background-color: #910873;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+.error-footer button:hover {
+  background-color: #49013a;
+}

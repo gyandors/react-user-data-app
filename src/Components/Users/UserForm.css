@@ -1,13 +1,11 @@
-.form-control {
-  padding: 15px;
-  margin: 20px 0;
-  background-color: white;
-  border-radius: 5px;
+.user-form {
+  padding: 1rem;
+  margin: 1.5rem 0;
 }
 
 .user-name-control,
 .user-id-control {
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
 }
 
 .user-name-control label,
@@ -21,7 +19,7 @@
 .user-name-control input,
 .user-id-control input {
   width: 70%;
-  height: 21px;
+  height: 1.6rem;
   padding: 2px;
   font-size: medium;
   border: 1px solid gray;
@@ -30,13 +28,17 @@
 input:focus {
   outline: none;
   border-color: #910873;
+  box-shadow: 1px 1px 5px #910873;
 }
 
-.form-control button {
+.btn {
   cursor: pointer;
   padding: 7px;
   font-weight: bold;
   color: white;
   background-color: #910873;
   border: 1px solid;
+}
+.btn:hover {
+  background-color: #49013a;
 }
