@@ -24,6 +24,12 @@
   height: 21px;
   padding: 2px;
   font-size: medium;
+  border: 1px solid gray;
+}
+
+input:focus {
+  outline: none;
+  border-color: #910873;
 }
 
 .form-control button {
