@@ -14,7 +14,9 @@ export default function UserList(props) {
         {props.users.map((user) => {
           return (
             <li key={user.id}>
-              {user.name} ({user.age} years old)
+              <span>{user.name} </span>
+              <span>{user.age} years old </span>
+              <span>{user.college}</span>
             </li>
           );
         })}

@@ -6,6 +6,7 @@ import './UserForm.css';
 export default function UserForm(props) {
   const enteredName = useRef();
   const enteredAge = useRef();
+  const enteredCollege = useRef();
 
   const [isValid, setisValid] = useState();
 
@@ -13,8 +14,13 @@ export default function UserForm(props) {
     event.preventDefault();
     const newUserName = enteredName.current.value;
     const newUserAge = enteredAge.current.value;
+    const newUserCollage = enteredCollege.current.value;
 
-    if (newUserName.trim().length === 0 || newUserAge.trim().length === 0) {
+    if (
+      newUserName.trim().length === 0 ||
+      newUserAge.trim().length === 0 ||
+      newUserCollage.trim().length === 0
+    ) {
       setisValid({
         title: 'Invalid input',
         message: 'Please enter valid input',
@@ -30,11 +36,17 @@ export default function UserForm(props) {
       return;
     }
 
-    const newUser = { name: newUserName, age: newUserAge, id: Math.random() };
+    const newUser = {
+      name: newUserName,
+      age: newUserAge,
+      college: newUserCollage,
+      id: Math.random(),
+    };
     props.onAddNewUser(newUser);
 
     enteredName.current.value = '';
     enteredAge.current.value = '';
+    enteredCollege.current.value = '';
   }
 
   function clickHandler() {
@@ -59,6 +71,10 @@ export default function UserForm(props) {
           <div className="user-id-control">
             <label htmlFor="user-id">Age (Years)</label>
             <input type="number" id="user-id" ref={enteredAge} />
+          </div>
+          <div className="user-college-control">
+            <label htmlFor="user-college">College</label>
+            <input type="text" id="user-college" ref={enteredCollege} />
           </div>
           <button type="submit" className="btn">
             Add User

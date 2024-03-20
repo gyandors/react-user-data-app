@@ -4,12 +4,14 @@
 }
 
 .user-name-control,
-.user-id-control {
+.user-id-control,
+.user-college-control {
   margin-bottom: 1rem;
 }
 
 .user-name-control label,
-.user-id-control label {
+.user-id-control label,
+.user-college-control label {
   display: block;
   width: fit-content;
   font-weight: bold;
@@ -17,7 +19,8 @@
 }
 
 .user-name-control input,
-.user-id-control input {
+.user-id-control input,
+.user-college-control input {
   width: 70%;
   height: 1.6rem;
   padding: 2px;
