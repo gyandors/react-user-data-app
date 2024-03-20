@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Card from '../UI/Card';
-import ErrorModal from '../UI/ErrorModel';
+import ErrorModal from '../UI/ErrorModal';
 import './UserForm.css';
 
 export default function UserForm(props) {
